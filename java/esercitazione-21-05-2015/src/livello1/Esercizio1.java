@@ -2,7 +2,7 @@ package livello1;
 
 import java.util.*;
 
-//import java.util.Scanner;
+import java.util.Scanner;
 
 public class Esercizio1 {
 
