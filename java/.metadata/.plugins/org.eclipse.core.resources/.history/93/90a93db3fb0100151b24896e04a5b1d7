@@ -1,0 +1,27 @@
+/**
+ * MainClass per verificare le funzionalità
+ * della classe Corpo
+ */
+package corpoceleste;
+
+/**
+ * @author ricky
+ */
+public class MainClass {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Corpo sole = new Corpo("Sole");
+		Corpo terra = new Corpo("Terra", sole);
+		Corpo luna = new Corpo("Luna", terra);
+		Corpo asteroide = new Corpo();
+		
+		System.out.println(sole);
+		System.out.println(terra);
+		System.out.println(luna);
+		System.out.println(asteroide);
+	}
+
+}

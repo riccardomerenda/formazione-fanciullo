@@ -1,0 +1,10 @@
+/*
+ * Esempio di una classe chiamata Pianeta, utilizzabile per 
+ * memorizzare i dati che riguardano vari corpi celesti come
+ * le comete, gli asteroidi, i pianeti e le stelle.
+ */
+package pianeta;
+
+public class Pianeta {
+
+}
