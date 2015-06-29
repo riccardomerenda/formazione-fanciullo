@@ -3,7 +3,7 @@
 
 All'interno di questa directory è disponibile il materiale relativo alle esercitazioni svolte a lezione su Java e Android.
 
-## Perchè?
+## Perché?
 
 Abbiamo pensato di concentrare tutto il codice sorgente relativo ai moduli
 
@@ -13,7 +13,7 @@ Abbiamo pensato di concentrare tutto il codice sorgente relativo ai moduli
 ## Requisiti
 
 Tutto il codice è eseguito all'interno degli ambienti di sviluppo Eclipse (per la parte Java) e Android Studio (per la parte Android).
-E' indispensabile che entrambi i software siano già correttamnte installati
+È indispensabile che entrambi i software siano già correttamnte installati
 
 ## Come usare il codice
 
