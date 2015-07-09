@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
      * per questo facciamo uso di una variabile
      */
     public boolean status = true;
+    public String colore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,5 +46,28 @@ public class MainActivity extends AppCompatActivity {
             bottoneSfondo.setBackgroundColor(getResources().getColor(R.color.Blue));
             status = true;
         }
+
+        /**
+         * Implementare il costrutto switch. L'utente sceglie quale colore
+         * di sfondo impostare
+         */
+
+        /*switch (colore){
+            case "Giallo":{
+                layout.setBackgroundColor(getResources().getColor(R.color.Yellow));
+                break;
+            }
+            case "Nero":{
+                //todo
+                break;
+            }
+            case "Rosso":{
+                //todo
+                break;
+            }
+            default:{
+                //todo
+            }
+        }*/
     }
 }
