@@ -25,6 +25,10 @@ public class MainActivity extends AppCompatActivity {
 
         RelativeLayout layout = (RelativeLayout) findViewById(R.id.sfondoActvity);
 
+        /**
+         * controllo qual è l'id del bottone premuto dall'utente
+         * e a seconda dei casi setto il colore di background del layout
+         */
         switch(v.getId()) {
             case R.id.buttonGiallo:
                 layout.setBackgroundColor(getResources().getColor(R.color.Giallo));
