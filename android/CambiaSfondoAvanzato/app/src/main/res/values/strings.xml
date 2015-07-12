@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CambiaSfondoAvanzato</string>
+    <string name="Giallo">Giallo</string>
+    <string name="Rosso">Rosso</string>
+    <string name="Verde">Verde</string>
+    <string name="Blue">Blue</string>
+    <string name="Rosa">Rosa</string>
+    <string name="Arancio">Arancio</string>
+</resources>
