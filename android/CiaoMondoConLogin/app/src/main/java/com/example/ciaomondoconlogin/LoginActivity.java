@@ -30,7 +30,7 @@ public class LoginActivity extends Activity {
             Intent helloAndroidIntent = new Intent(LoginActivity.this,
                     MainActivity.class);
 
-            // Use the Intent to start the HelloAndroid Activity
+            // Usiamo l'Intent per avviare la MainActivity
             startActivity(helloAndroidIntent);
         } else {
             uname.setText("");
