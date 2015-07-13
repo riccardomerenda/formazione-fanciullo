@@ -3,6 +3,6 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="luogo_string">Location!</string>
+    <string name="luogo_string">Inserisci un luogo</string>
     <string name="mostra_mappa">Mostra Mappa</string>
 </resources>

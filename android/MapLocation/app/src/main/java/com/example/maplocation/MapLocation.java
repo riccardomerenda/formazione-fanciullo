@@ -33,7 +33,9 @@ public class MapLocation extends Activity {
         try{
             //Processiamo il testo per la trasmissione di rete
             String indirizzo = indirizzoEdit.getText().toString();
+            Log.d("VALORE INDIRIZZO", "Indirizzo: " + indirizzo);
             indirizzo = indirizzo.replace(' ', '+');
+            Log.d("NUOVO VALORE INDIRIZZO", "Indirizzo: " + indirizzo);
 
             //Creiamo l'oggetto Intent per aprire l'applicazione Google Map
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q=" + indirizzo));
@@ -49,36 +51,36 @@ public class MapLocation extends Activity {
     @Override
     protected void onStart(){
         super.onStart();
-        Log.d(TAG,"Activity visibile e in procinto di essere avviata");
+        Log.d(TAG,"ON START Activity visibile e in procinto di essere avviata");
     }
 
     @Override
     protected void onRestart(){
         super.onRestart();
-        Log.d(TAG,"Activity è visibile e in procinto di essere riavviata");
+        Log.d(TAG,"ON RESTART Activity è visibile e in procinto di essere riavviata");
     }
 
     @Override
     protected void onResume(){
         super.onResume();
-        Log.d(TAG, "Activity <<riesumata>>");
+        Log.d(TAG, "ON RESUME Activity <<riesumata>>");
     }
 
     @Override
     protected void onPause(){
         super.onPause();
-        Log.d(TAG, "Un'altra Activity ha il focus");
+        Log.d(TAG, "ON PAUSE Un'altra Activity ha il focus");
     }
 
     @Override
     protected void onStop(){
         super.onStop();
-        Log.d(TAG,"Activity non più visibile");
+        Log.d(TAG,"ON STOP Activity non più visibile");
     }
 
     @Override
     protected void onDestroy(){
         super.onDestroy();
-        Log.d(TAG, "Activity viene cancellata");
+        Log.d(TAG, "ON DESTROY Activity viene cancellata");
     }
 }

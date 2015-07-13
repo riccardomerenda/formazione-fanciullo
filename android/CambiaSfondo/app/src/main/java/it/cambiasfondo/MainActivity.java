@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
             case "Rosso":{
-                //todo9
+                //todo
                 break;
             }
             default:{
