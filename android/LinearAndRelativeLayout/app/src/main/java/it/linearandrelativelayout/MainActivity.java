@@ -2,6 +2,7 @@ package it.linearandrelativelayout;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Toast;
 
@@ -58,6 +59,12 @@ public class MainActivity extends Activity {
                 break;
             case R.id.button3:
                 Toast.makeText(getApplicationContext(), "Premuto Bottone 3", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.buttonGreen:
+                Toast toast = Toast.makeText(getApplicationContext(), "Premuto clicca qui", Toast.LENGTH_SHORT);
+                //questo posiziona il toast in alto a sinistra
+                toast.setGravity(Gravity.TOP|Gravity.LEFT, 50, 50);
+                toast.show();
                 break;
         }
     }

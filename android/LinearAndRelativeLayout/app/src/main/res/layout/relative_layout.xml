@@ -22,4 +22,17 @@
         android:layout_above="@+id/imageView"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="36dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button"
+        android:id="@+id/buttonGreen"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:onClick="clickBottone"
+        android:background="@color/Green"
+        android:textColor="@color/White"
+        android:padding="10dp"/>
 </RelativeLayout>
