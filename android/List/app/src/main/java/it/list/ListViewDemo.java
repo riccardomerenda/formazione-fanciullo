@@ -55,7 +55,7 @@ public class ListViewDemo extends Activity {
          * un altro layout ed aggiungere android:choiceMode="multipleChoice" nel mio file xml.
          */
         //adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_multiple_choice, regioni);
-        //listView.setAdapter(adapter);
+        listView.setAdapter(adapter);
 
         /**
          * Per listeners intendiamo la possibilità di catturare gli eventi che vengono generati quando facciamo click
