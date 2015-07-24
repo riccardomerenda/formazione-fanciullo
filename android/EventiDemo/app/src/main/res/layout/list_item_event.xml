@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:background="@drawable/border">
+
+        <RelativeLayout
+            android:id="@+id/data_evento"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="20dip">
+
+            <TextView
+                android:id="@+id/giorno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="30sp"
+                android:text="30"
+                android:textColor="@color/Black"
+                />
+
+            <TextView
+                android:id="@+id/mese"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/giorno"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/Gray"
+                android:text="luglio"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/data_evento"
+            android:layout_toRightOf="@+id/data_evento"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_evento"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/titolo_evento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/Black"
+                android:text="Vivaci"/>
+
+            <TextView
+                android:id="@+id/luogo_evento"
+                style="@android:style/TextAppearance.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Gray"
+                android:text="Piazze di Acireale / Acireale"/>
+
+            <TextView
+                android:id="@+id/categoria_evento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="2dp"
+                android:textAllCaps="true"
+                android:textColor="@color/Indigo"
+                android:textSize="11sp"
+                android:text="arte, danza, feste"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
