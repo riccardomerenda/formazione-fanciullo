@@ -13,7 +13,7 @@ import android.widget.TextView;
  * Gli items sono automanticamente inseriti nel layout usando a ListAdapter.
  *
  * L'ArrayAdapter è un'implementazione dell'interfaccia ListAdapter che viene utilizzata
- * per visualizzare un'array di elementi dove ad ogni elemento della lista è associata una TextView.
+ * per visualizzare un array di elementi dove ad ogni elemento della lista è associata una TextView.
  * Nella TextView viene visualizzato il toString() dell'elemento.
  */
 
