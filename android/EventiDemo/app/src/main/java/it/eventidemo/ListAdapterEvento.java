@@ -27,7 +27,7 @@ public class ListAdapterEvento extends ArrayAdapter<Evento> {
 
     /**
      * Una classe ViewHolder e' tipicamente una classe statica presente nel nostro adapter
-     * che contiene riferimenti alle viste piu' di rilevo.
+     * che contiene riferimenti alle viste piu' di rilievo.
      */
     static class ViewHolder {
         public TextView id;

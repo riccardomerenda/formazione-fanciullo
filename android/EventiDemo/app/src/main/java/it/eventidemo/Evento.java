@@ -17,18 +17,31 @@ public class Evento implements Serializable {
     private String giorno;
     private String mese;
     private String luogo;
+    private double latitudine;
+    private double longitudine;
 
     //metodo costruttore
-    public Evento(String id, String titolo, String categoria, String giorno, String mese, String luogo) {
+    public Evento(String id, String titolo, String categoria, String giorno, String mese,
+                  String luogo, double latitudine, double longitudine) {
         this.id = id;
         this.titolo = titolo;
         this.categoria = categoria;
         this.giorno = giorno;
         this.mese = mese;
         this.luogo = luogo;
+        this.latitudine = latitudine;
+        this.longitudine = longitudine;
     }
 
     //metodi accessori get e set
+    public double getLatitudine(){
+        return latitudine;
+    }
+
+    public double getLongitudine(){
+        return longitudine;
+    }
+
     public String getId() {
         return id;
     }

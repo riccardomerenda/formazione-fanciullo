@@ -1,5 +1,6 @@
 package it.eventidemo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -46,19 +47,27 @@ public class MainActivity extends AppCompatActivity {
          *
          * In questo esempio semplifichiamo il tutto e creiamo 10 eventi statici.
          */
-        Evento evento1 = new Evento("1", "Delta Moon", "musica", "24", "luglio", "Mascalucia (CT)");
-        Evento evento2 = new Evento("2", "Marracash", "musica", "25", "luglio", "Zafferana Etnea (CT)");
-        Evento evento3 = new Evento("3", "Festa della Birra", "festival, fiere, musica, mercatini", "26", "luglio", "Valverde (CT)");
-        Evento evento4 = new Evento("4", "CrossRoad", "arte, incontri", "27", "luglio", "Catania (CT)");
-        Evento evento5 = new Evento("5", "Vivaci", "arte, danza, feste, musica", "29", "luglio", "Acireale (CT)");
-        Evento evento6 = new Evento("6", "Fedez", "musica", "1", "agosto", "Villa Bellini, Catania (CT)");
-        Evento evento7 = new Evento("7", "I mangianastri", "musica", "3", "agosto", "Centro storico, Acireale (CT)");
-        Evento evento8 = new Evento("8", "Dirotta su cuba", "musica", "8", "agosto", "Qubba, Catania (CT)");
-        Evento evento9 = new Evento("9", "Subsonica", "musica", "12", "agosto", "Villa Bellini, Catania (CT)");
-        Evento evento10 = new Evento("10", "Catania Tango festival", "festival", "16", "agosto", "Anfiteatro Le ciminiere, Catania (CT)");
+        Evento evento1 = new Evento("1", "Delta Moon", "musica", "24", "luglio", "Mascalucia (CT)",37.5,15.0);
+        Evento evento2 = new Evento("2", "Marracash", "musica", "25", "luglio", "Zafferana Etnea (CT)",37.4,15.1);
+        Evento evento3 = new Evento("3", "Festa della Birra", "festival, fiere, musica, mercatini",
+                "26", "luglio", "Valverde (CT)",37.3,14.9);
+        Evento evento4 = new Evento("4", "CrossRoad", "arte, incontri", "27", "luglio",
+                "Catania (CT)",37.6,15.2);
+        Evento evento5 = new Evento("5", "Vivaci", "arte, danza, feste, musica", "29", "luglio",
+                "Acireale (CT)",37.1,15.4);
+        Evento evento6 = new Evento("6", "Fedez", "musica", "1", "agosto", "Villa Bellini, " +
+                "Catania (CT)",37.2,15.6);
+        Evento evento7 = new Evento("7", "I mangianastri", "musica", "3", "agosto", "Centro storico, " +
+                "Acireale (CT)",37.1,15.1);
+        Evento evento8 = new Evento("8", "Dirotta su cuba", "musica", "8", "agosto", "Qubba, " +
+                "Catania (CT)",36.5,15.9);
+        Evento evento9 = new Evento("9", "Subsonica", "musica", "12", "agosto", "Villa Bellini, " +
+                "Catania (CT)",37.513,15.012);
+        Evento evento10 = new Evento("10", "Catania Tango festival", "festival", "16", "agosto",
+                "Anfiteatro Le ciminiere, Catania (CT)",37.5111,15.0176);
 
         /**
-         * aggiungiamo i 10 eventi all'arrayList che in seguito passeremo al nostro Adapter
+         * aggiungiamo i 10 eventi all'arrayList che in seguito li passeremo al nostro Adapter
          */
         listEvento.add(evento1);
         listEvento.add(evento2);
@@ -86,7 +95,12 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(), listEvento.get(position).getTitolo(), Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), listEvento.get(position).getTitolo(), Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MainActivity.this,MapsActivity.class);
+                intent.putExtra("latitudine",listEvento.get(position).getLatitudine());
+                intent.putExtra("longitudine",listEvento.get(position).getLongitudine());
+                intent.putExtra("titolo",listEvento.get(position).getTitolo());
+                startActivity(intent);
             }
         });
     }
